@@ -15,8 +15,8 @@ void Search(int* b,int start,int end,int k,int j) {
                     break;
                 }
             }
-            //for (int i = 0; i <= middle; i++)
-                //cout << b[i] << " ";
+            for (int i = 0; i <= middle; i++)
+                cout << b[i] << " ";
             ans += middle + 1;
             return;
         }
@@ -40,10 +40,10 @@ int main(){
     }
     for(int j = 1;j<n;j++){
         int k = a[j]/2;
-        //cout<<a[j];
-        //cout<<"->";
+        cout<<a[j];
+        cout<<"->";
         Search(b,0,j,k,j);
-        //cout<<endl;
+        cout<<endl;
     }
     cout<<ans<<endl;
 }
